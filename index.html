@@ -3,26 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaydon Quek - Personal Portfolio</title>
+    <title>Jaydon Quek - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Jaydon Quek</h1>
-        <p>Welcome to my personal website!</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Jaydon Quek</h1>
+            <p>Programmer | Music Enthusiast | Problem Solver</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>A programmer passionate about all things cybersecurity and a lover of music.</p>
+        <img src="me.jpg" alt="My Photo" class="profile-img">
+        <p>A a recent Computer Science graduate with a passion for all things cybersecurity and a lover of music.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Carpooling Application</h3>
+            <p>Designed and developed a web-based carpooling application using Flask that allowed university staff and students to book car rides to university.</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Notes App</h3>
+            <p> Developed a notes application with basic sticky note functionality using React and TypeScript</p>
+        </div>
     </section>
 
     <section id="skills">
@@ -35,25 +46,18 @@
         </ul>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <h3>Notes App</h3>
-        <p> Developed a notes application with basic sticky note functionality using React and TypeScript</p>
-        <h3>Carpooling Application</h3>
-        <p>Designed and developed a web-based carpooling application using Flask that allowed university staff and students to book car rides to university.</p>
-    </section>
-
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>If you'd like to reach out, feel free to contact me via email or connect on LinkedIn!</p>
-        <ul>
-            <li>Email: qjaydon@gmail.com</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/jaydon-quek/" target="_blank">Your LinkedIn Profile</a></li>
+        <p>Feel free to reach out through any of the platforms below:</p>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/jaydon-quek/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/Jayd0n2" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="mailto:qjaydon@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
         </ul>
     </section>
 
     <footer>
-        <p>&copy; 2024 Jaydon Quek. All rights reserved.</p>
+        <p>&copy; 2024 Jaydon Quek. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
