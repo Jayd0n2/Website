@@ -36,9 +36,11 @@ section {
 
 .profile-img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    max-width: 150px; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
     margin-top: 1rem;
+    width: 100%; /* Allow image to be responsive */
+    max-height: 150px; /* Set a maximum height to prevent overflow */
 }
 
 .project {
@@ -46,12 +48,8 @@ section {
 }
 
 .project img {
-    border-radius: 50%;
-    max-width: 150px; /* Maximum width of the image */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 1rem;
-    width: 100%; /* Allow image to be responsive */
-    max-height: 150px; /* Set a maximum height to prevent overflow */
+   max-width: 100%;
+   height: auto;
 }
 
 ul {
