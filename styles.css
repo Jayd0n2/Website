@@ -1,59 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: #4a90e2;
+    color: white;
+    padding: 2rem 0;
     text-align: center;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
+.container {
+    max-width: 800px;
+    margin: auto;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
+.btn {
+    background: #e94e77;
+    color: white;
+    padding: 0.5rem 1rem;
     text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 10px;
-    background: #fff;
     border-radius: 5px;
 }
 
-h2 {
-    color: #333;
-}
-
-footer {
+section {
+    padding: 2rem 0;
     text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 .profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 1rem;
+}
+
+.project {
+    margin: 1rem 0;
+}
+
+.project img {
     border-radius: 50%;
     max-width: 150px; /* Maximum width of the image */
     height: auto; /* Maintain aspect ratio */
     margin-top: 1rem;
     width: 100%; /* Allow image to be responsive */
     max-height: 150px; /* Set a maximum height to prevent overflow */
+}
+
+ul {
+    list-style-type: none;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #f4f4f4;
 }
