@@ -48,3 +48,12 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.profile-img {
+    border-radius: 50%;
+    max-width: 150px; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 1rem;
+    width: 100%; /* Allow image to be responsive */
+    max-height: 150px; /* Set a maximum height to prevent overflow */
+}
