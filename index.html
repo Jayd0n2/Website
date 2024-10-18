@@ -59,5 +59,38 @@
     <footer>
         <p>&copy; 2024 Jaydon Quek. All Rights Reserved.</p>
     </footer>
+    <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>
+        const sections = document.querySelectorAll('section');
+    
+        const options = {
+            root: null,
+            threshold: 0.1,
+            rootMargin: "0px 0px -50% 0px"
+        };
+    
+        const animateOnScroll = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+    
+        const observer = new IntersectionObserver(animateOnScroll, options);
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
