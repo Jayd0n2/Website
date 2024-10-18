@@ -9,18 +9,26 @@
 </head>
 <body>
     <div id="loader" class="loader"></div>
+
     <header>
         <div class="container">
             <h1>Jaydon Quek</h1>
             <p>Programmer | Music Enthusiast | Problem Solver</p>
-            <a href="#contact" class="btn">Contact Me</a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
         <img src="Me.jpg" alt="My Photo" class="profile-img">
-        <p>A a recent Computer Science graduate with a passion for all things cybersecurity and a lover of music.</p>
+        <p>A recent Computer Science graduate with a passion for all things cybersecurity and a lover of music.</p>
     </section>
 
     <section id="projects">
@@ -28,12 +36,12 @@
         <div class="project">
             <img src="project1.jpg" alt="Project 1">
             <h3>Carpooling Application</h3>
-            <p>Designed and developed a web-based carpooling application using Flask that allowed university staff and students to book car rides to university.</p>
+            <p>Designed and developed a web-based carpooling application using Flask.</p>
         </div>
         <div class="project">
             <img src="Notes.jpg" alt="Project 2">
             <h3>Notes App</h3>
-            <p> Developed a notes application with basic sticky note functionality using React and TypeScript</p>
+            <p>Developed a notes application with sticky note functionality using React and TypeScript.</p>
         </div>
     </section>
 
@@ -60,43 +68,7 @@
     <footer>
         <p>&copy; 2024 Jaydon Quek. All Rights Reserved.</p>
     </footer>
-    <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-    <script>
-        const sections = document.querySelectorAll('section');
-    
-        const options = {
-            root: null,
-            threshold: 0.1,
-            rootMargin: "0px 0px -50% 0px"
-        };
-    
-        const animateOnScroll = (entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                    observer.unobserve(entry.target);
-                }
-            });
-        };
-    
-        const observer = new IntersectionObserver(animateOnScroll, options);
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
-    <script>
-        window.onload = function() {
-            document.getElementById('loader').style.display = 'none';
-        };
-    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
