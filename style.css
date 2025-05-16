@@ -449,20 +449,21 @@ footer p {
 .certifications-badges {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .certifications-badges img {
-  max-width: 300px; 
+  max-width: 400px;
   width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
 .certifications-badges img:hover {
-  transform: scale(1.05);
+  transform: scale(1.5);
 }
